@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanat Terzi | Atakent Küçükçekmece — Terzi, Tadilat & Kuru Temizleme</title>
+  <meta name="description" content="Sanat Terzi — Atakent, Küçükçekmece'de takım elbise, abiye ve gelinlik tadilatı, paça daraltma ve kuru temizleme hizmetleri. Kaliteli iş ve müşteri memnuniyeti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-stage" aria-hidden="true">
+    <div class="bg-slide active"></div>
+    <div class="bg-slide"></div>
+    <div class="bg-slide"></div>
+    <div class="bg-slide"></div>
+    <div class="bg-slide"></div>
+    <div class="bg-veil"></div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <nav class="step-dots" aria-label="Bölüm Adımları">
+    <a href="#iletisim" class="step-dot active" data-step="0" aria-label="1. Bölüm: İletişim & Konum"></a>
+    <a href="#hizmetler" class="step-dot" data-step="1" aria-label="2. Bölüm: Hizmetler"></a>
+    <a href="#mesaj" class="step-dot" data-step="2" aria-label="3. Bölüm: Hızlı Mesaj"></a>
+    <a href="#hakkimizda" class="step-dot" data-step="3" aria-label="4. Bölüm: Hakkımızda"></a>
+    <a href="#surec" class="step-dot" data-step="4" aria-label="5. Bölüm: Nasıl Çalışır?"></a>
+  </nav>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Sanat Terzi Ana Sayfa">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M25.5 11.5C22.5 9.5 16.5 10 15 13.5C13.5 17 25 18.5 24 23.5C23 27.5 17 28.5 13.5 26" stroke="#C49A52" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M12.5 29L27.5 11" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+            <circle cx="28.2" cy="10.2" r="1.4" fill="#C49A52"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">SANAT TERZİ</span>
+          <span class="brand-sub" data-i18n="brandSub">Atakent · Küçükçekmece</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Ana Menü">
+        <a href="#iletisim" data-i18n="navContact">İletişim</a>
+        <a href="#hizmetler" data-i18n="navServices">Hizmetler</a>
+        <a href="#hakkimizda" data-i18n="navAbout">Hakkımızda</a>
+        <a href="#surec" data-i18n="navProcess">Nasıl Çalışır?</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Dil Seçimi / Language">
+          <button type="button" class="lang-btn active" data-lang="tr">TR</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#iletisim" class="mobile-link" data-i18n="navContact">İletişim</a>
+      <a href="#hizmetler" class="mobile-link" data-i18n="navServices">Hizmetler</a>
+      <a href="#hakkimizda" class="mobile-link" data-i18n="navAbout">Hakkımızda</a>
+      <a href="#surec" class="mobile-link" data-i18n="navProcess">Nasıl Çalışır?</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Combined Top Hero & Location Section -->
+    <section id="iletisim" class="hero top-combined" data-bg="0">
+      <div class="container top-grid">
+        <div class="top-left">
+          <p class="eyebrow" data-i18n="heroEyebrow">ATAKENT · KÜÇÜKÇEKMECE</p>
+          <h1 data-i18n-html="heroTitle">Her Dikişte <em>Özen</em>, Her Parçada Kalite.</h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            Takım elbise ve abiyeden gelinlik tadilatına, paça tadilatından kuru temizlemeye kadar her parçaya hak ettiği özeni gösteriyoruz.
+          </p>
+
+          <div class="top-contact-box">
+            <div class="top-contact-row">
+              <span class="top-contact-label" data-i18n="labelAddress">Adres</span>
+              <span class="top-contact-val">Atakent, 213. Sk D:7, 34290 Küçükçekmece / İstanbul</span>
+            </div>
+            <div class="top-contact-meta">
+              <div>
+                <span class="top-contact-label" data-i18n="labelPhone">Telefon &amp; WhatsApp</span>
+                <a href="tel:+905356502690" class="top-contact-link">0535 650 26 90</a>
+              </div>
+              <div>
+                <span class="top-contact-label">Instagram</span>
+                <a href="https://www.instagram.com/sanatterziatakent/" target="_blank" rel="noopener noreferrer" class="top-contact-link">@sanatterziatakent</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="tel:+905356502690" class="btn btn-whatsapp" data-i18n="btnCall">
+              Bize Ulaşın · Ara
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Sanat+Terzi,+Atakent,+213.+Sk+D:7,+34290+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="btnDirections">
+              Yol Tarifi Al
+            </a>
+            <a href="#hizmetler" class="btn btn-ghost" data-i18n="heroPrimaryCta">
+              Hizmetleri İncele
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span data-i18n="trust1">Kaliteli İşçilik</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span data-i18n="trust2">Müşteri Memnuniyeti</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-dot"></span>
+              <span data-i18n="trust3">Zamanında Teslim</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-right">
+          <div class="map-card">
+            <div class="map-card-bar">
+              <span class="map-card-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Güneşpark Çarşı · Atakent</span>
+              </span>
+              <a href="https://www.google.com/maps/search/?api=1&query=Sanat+Terzi,+Atakent,+213.+Sk+D:7,+34290+K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul" target="_blank" rel="noopener noreferrer" class="map-card-ext" data-i18n="btnDirections">
+                Yol Tarifi Al
+              </a>
+            </div>
+            <div class="map-wrap top-map">
+              <iframe
+                title="Sanat Terzi Konum Haritası"
+                src="https://www.google.com/maps?q=Sanat%20Terzi%2C%20Atakent%2C%20213.%20Sk%20D%3A7%2C%2034290%20K%C3%BC%C3%A7%C3%BCk%C3%A7ekmece%2F%C4%B0stanbul&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="section services-section" data-bg="1">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-i18n="servicesEyebrow">HİZMETLERİMİZ</p>
+          <h2 data-i18n="servicesTitle">Her Kumaşa ve Kalıba Uygun Çözümler</h2>
+          <p class="section-desc" data-i18n="servicesDesc">
+            Günlük kıyafetlerinizden en özel günlerinize kadar tüm tekstil ihtiyaçlarınızda titiz işçilik sunuyoruz.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/suit-tailoring.jpg" alt="Takım elbise ve abiye tadilatı" />
+            </div>
+            <div class="service-body">
+              <span class="service-tag" data-i18n="s1Tag">Özel İşçilik</span>
+              <h3 data-i18n="s1Title">Takım Elbise &amp; Abiye Tadilatı</h3>
+              <p data-i18n="s1Desc">
+                Ceket omuz ve kol boyu ayarı, bel daraltma, astar yenileme ve abiye elbiselerin vücut formuna tam oturtulması.
+              </p>
+              <ul class="service-list">
+                <li data-i18n="s1Li1">Orijinal dikiş ve kesim formuna sadık kalınır</li>
+                <li data-i18n="s1Li2">Prova ile kişiye özel kalıp ayarı</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/bridal-tailoring.jpg" alt="Gelinlik ve nişanlık tadilatı" />
+            </div>
+            <div class="service-body">
+              <span class="service-tag" data-i18n="s2Tag">Hassas Kumaş</span>
+              <h3 data-i18n="s2Title">Gelinlik Tadilatı</h3>
+              <p data-i18n="s2Desc">
+                Dantel, tül ve ipek gibi hassas kumaşlarda iz bırakmayan ince işçilikle gelinlik ve nişanlıklarınıza kusursuz uyum.
+              </p>
+              <ul class="service-list">
+                <li data-i18n="s2Li1">Korse daraltma, askı ve etek boyu ayarı</li>
+                <li data-i18n="s2Li2">Özel gün tarihinize göre öncelikli teslim</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/alterations.jpg" alt="Pantolon paça ve daraltma işçiliği" />
+            </div>
+            <div class="service-body">
+              <span class="service-tag" data-i18n="s3Tag">Günlük Bakım</span>
+              <h3 data-i18n="s3Title">Paça &amp; Daraltma</h3>
+              <p data-i18n="s3Desc">
+                Pantolon paçası (orijinal paça dahil), gömlek ve elbise daraltma, fermuar değişimi ve günlük tüm onarım işleri.
+              </p>
+              <ul class="service-list">
+                <li data-i18n="s3Li1">Kot, kumaş ve keten pantolonlarda orijinal paça</li>
+                <li data-i18n="s3Li2">Hızlı ve temiz dikiş bitişi</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/dry-cleaning.jpg" alt="Profesyonel kuru temizleme ve ütü" />
+            </div>
+            <div class="service-body">
+              <span class="service-tag" data-i18n="s4Tag">Tekstil Bakımı</span>
+              <h3 data-i18n="s4Title">Kuru Temizleme</h3>
+              <p data-i18n="s4Desc">
+                Takım elbise, kaban, abiye, gelinlik ve hassas kumaşlarınız için dokuya zarar vermeyen profesyonel kuru temizleme ve ütü hizmeti.
+              </p>
+              <ul class="service-list">
+                <li data-i18n="s4Li1">Leke çıkarma ve hijyenik bakım</li>
+                <li data-i18n="s4Li2">Form koruyan profesyonel buharlı ütü</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick WhatsApp Form Section -->
+    <section id="mesaj" class="section" data-bg="2">
+      <div class="container">
+        <div class="quote-box reveal">
+          <div class="quote-info">
+            <p class="eyebrow" data-i18n="quoteEyebrow">HIZLI MESAJ</p>
+            <h2 data-i18n="quoteTitle">WhatsApp ile Bilgi Alın</h2>
+            <p data-i18n="quoteDesc">
+              İşleminizi seçip kısa notunuzu yazın; mesajınız hazır şekilde doğrudan WhatsApp hattımıza yönlendirilsin.
+            </p>
+          </div>
+
+          <form class="quote-form" id="whatsappForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customerName" data-i18n="formNameLabel">Adınız Soyadınız</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Örn. Ayşe Yılmaz" data-i18n-placeholder="formNamePlaceholder" required />
+              </div>
+              <div class="form-group">
+                <label for="serviceType" data-i18n="formServiceLabel">Hizmet Türü</label>
+                <select id="serviceType" name="serviceType">
+                  <option value="Takım Elbise / Abiye Tadilatı" data-i18n="optSuit">Takım Elbise / Abiye Tadilatı</option>
+                  <option value="Paça / Daraltma" data-i18n="optHem">Paça / Daraltma</option>
+                  <option value="Gelinlik Tadilatı" data-i18n="optBridal">Gelinlik Tadilatı</option>
+                  <option value="Kuru Temizleme" data-i18n="optDry">Kuru Temizleme</option>
+                  <option value="Diğer" data-i18n="optOther">Diğer</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="customerNote" data-i18n="formNoteLabel">Kısa Notunuz (İsteğe Bağlı)</label>
+              <textarea id="customerNote" name="customerNote" rows="3" placeholder="Örn. Pantolon paçası ve ceket kolu kısaltma için uğramak istiyorum." data-i18n-placeholder="formNotePlaceholder"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="formSubmit">
+              WhatsApp ile Gönder
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Values Section -->
+    <section id="hakkimizda" class="section about-section" data-bg="3">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-photo">
+            <img src="assets/suit-tailoring.jpg" alt="Kalıp ve dikiş detayları" />
+          </div>
+          <div class="about-photo about-photo-offset">
+            <img src="assets/bridal-tailoring.jpg" alt="Özenli el işçiliği ve prova" />
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">SANAT TERZİ HAKKINDA</p>
+          <h2 data-i18n="aboutTitle">Kaliteli İş, Önce Dinlemekle Başlar.</h2>
+          <p data-i18n-html="aboutP1">
+            Atakent'te hizmet veren <strong>Sanat Terzi</strong> olarak, her kıyafetin sahibinin üzerinde en iyi şekilde durması gerektiğine inanıyoruz.
+          </p>
+          <p data-i18n="aboutP2">
+            İster günlük bir pantolon paçası, ister özenle saklayacağınız bir gelinlik olsun; her parçayı kendi kıyafetimiz gibi ele alıyor, müşteri memnuniyetini her zaman ilk sırada tutuyoruz.
+          </p>
+
+          <div class="pillars">
+            <div class="pillar-item">
+              <span class="pillar-num">01</span>
+              <div>
+                <h3 data-i18n="p1Title">Hassas Ölçü &amp; Prova</h3>
+                <p data-i18n="p1Desc">Vücut yapınıza ve kumaşın düşüşüne uygun, tam oturan ölçülendirme.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">02</span>
+              <div>
+                <h3 data-i18n="p2Title">Kumaşa Saygılı İşçilik</h3>
+                <p data-i18n="p2Desc">İpek, dantel, yün ve keten gibi dokularda iz bırakmayan temiz dikiş teknikleri.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">03</span>
+              <div>
+                <h3 data-i18n="p3Title">Güvenilir &amp; Zamanında Teslim</h3>
+                <p data-i18n="p3Desc">Söz verilen tarihte, kullanıma hazır şekilde teslimat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="surec" class="section process-section" data-bg="4">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow" data-i18n="processEyebrow">NASIL ÇALIŞIR?</p>
+          <h2 data-i18n="processTitle">Üç Adımda Kusursuz Uyum</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <div class="step-index">1</div>
+            <h3 data-i18n="step1Title">Atölyemize Uğrayın</h3>
+            <p data-i18n="step1Desc">Güneşpark Çarşı'daki dükkanımıza gelin veya iletişim bölümünden bize ulaşarak ön bilgi alın.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-index">2</div>
+            <h3 data-i18n="step2Title">Ölçü &amp; Planlama</h3>
+            <p data-i18n="step2Desc">Kumaş yapısına ve vücut ölçünüze göre yapılacak tadilat veya temizleme işlemi netleştirilir.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-index">3</div>
+            <h3 data-i18n="step3Title">Özenli Teslimat</h3>
+            <p data-i18n="step3Desc">Titiz işçilik ve son kontrolün ardından kıyafetiniz tam zamanında size teslim edilir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">SANAT TERZİ</span>
+        <p data-i18n="footerTagline">Atakent, Küçükçekmece · Kaliteli İş &amp; Müşteri Memnuniyeti</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hizmetler" data-i18n="navServices">Hizmetler</a>
+        <a href="#hakkimizda" data-i18n="navAbout">Hakkımızda</a>
+        <a href="https://www.instagram.com/sanatterziatakent/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="tel:+905356502690">0535 650 26 90</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Sanat Terzi. <span data-i18n="footerRights">Tüm hakları saklıdır.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
