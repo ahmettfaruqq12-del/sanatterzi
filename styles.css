@@ -66,27 +66,27 @@ body {
 
 .bg-slide:nth-child(1) {
   z-index: 1;
-  background-image: url("assets/hero-atelier.jpg");
+  background-image: url("hero-atelier.jpg");
 }
 
 .bg-slide:nth-child(2) {
   z-index: 2;
-  background-image: url("assets/bg-fabrics.jpg");
+  background-image: url("bg-fabrics.jpg");
 }
 
 .bg-slide:nth-child(3) {
   z-index: 3;
-  background-image: url("assets/dry-cleaning.jpg");
+  background-image: url("dry-cleaning.jpg");
 }
 
 .bg-slide:nth-child(4) {
   z-index: 4;
-  background-image: url("assets/bg-craft.jpg");
+  background-image: url("bg-craft.jpg");
 }
 
 .bg-slide:nth-child(5) {
   z-index: 5;
-  background-image: url("assets/bg-fitting.jpg");
+  background-image: url("bg-fitting.jpg");
 }
 
 .bg-slide.active {
@@ -1162,22 +1162,22 @@ h3 {
   }
 
   .bg-slide:nth-child(1) {
-    background-image: url("assets/bg-mobile-1.jpg");
+    background-image: url("bg-mobile-1.jpg");
     background-position: center center;
   }
 
   .bg-slide:nth-child(3) {
-    background-image: url("assets/hero-featured.jpg");
+    background-image: url("hero-featured.jpg");
     background-position: center center;
   }
 
   .bg-slide:nth-child(4) {
-    background-image: url("assets/bg-mobile-3.jpg");
+    background-image: url("bg-mobile-3.jpg");
     background-position: center center;
   }
 
   .bg-slide:nth-child(5) {
-    background-image: url("assets/bg-mobile-4.jpg");
+    background-image: url("bg-mobile-4.jpg");
     background-position: center center;
   }
 
